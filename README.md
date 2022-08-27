@@ -1,4 +1,5 @@
-# goit-markup-hw-01
+# goit-markup-hw-08
+
  <label class="form__field field-conditions">
                 <input type="checkbox" class="form-checkbox" name="conditions" />
                 <span class="check-box"></span>
