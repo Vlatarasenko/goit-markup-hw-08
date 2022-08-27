@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+  .about-img{
+
+  display: none;}
+}
+
+@media screen and (max-width: 1199px) {
+  .about-img{
+
+  display: none;}
+}
+
+.about-img {
+  padding-top: 0;
+}
+
+.work-progress {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.work-progress__item {
+  position: relative;
+}
+
+.work-progress-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  margin-bottom: 0;
+  padding: 27px 0;
+
+  text-align: center;
+  color: var(--text-primary-color);
+  @include font(700, 14px, 16px);
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

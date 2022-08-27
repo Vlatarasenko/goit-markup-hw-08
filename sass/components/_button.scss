@@ -1,0 +1,108 @@
+.modal-btn {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  font-family: "Roboto";
+  @include font(700, 16px, 30px);
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--text-primary-color);
+  background-color: var(--active-color);
+  cursor: pointer;
+  transition: background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.button__active {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 6px 22px;
+  font-family: inherit;
+  @include font(500, 16px, 26px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+
+  &:not(:last-child) {
+    margin-left: 8px;
+  }
+}
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #0861ab;
+}
+
+.form__subscribe .button-submit svg {
+  margin-left: 10px;
+  fill: var(--text-primary-color);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @extend %align;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: border-color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    border-color: var(--active-color);
+  }
+
+  &:hover .modal-close-btn-icon,
+  &:focus .modal-close-btn-icon {
+    fill: var(--active-color);
+  }
+}
+
+.modal-btn-form {
+  align-self: center;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  font-family: "Roboto";
+  @include font(700, 16px, 30px);
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--text-primary-color);
+  background-color: var(--active-color);
+  cursor: pointer;
+  transition: background-color var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: #1472c0;
+  }
+}
+.button.current,
+.button:hover,
+.button:focus {
+  color: var(--text-primary-color);
+  background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.modal-close-btn-icon {
+  transition: fill var(--transition-dur-and-func);
+}
